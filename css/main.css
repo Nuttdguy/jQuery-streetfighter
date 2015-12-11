@@ -9,7 +9,7 @@ body {
 .main {
 	background-color: #fff;
 	margin-top: 110px;
-	padding-left: 100px;
+	padding-left: 10px;
 	min-width: 1200px;
 	height: 500px;
 	position: relative;
@@ -32,13 +32,15 @@ body {
 
 .ryu-ready,
 .ryu-still,
-.ryu-throwing {
+.ryu-throwing,
+.ryu-cool {
 	width: 659px;
 	height: 494px;
 }
 
 .ryu-ready,
-.ryu-throwing {
+.ryu-throwing,
+.ryu-cool {
 	display: none;
 }
 
@@ -54,10 +56,15 @@ body {
 	background-image: url("../images/ryu-throwing-hadouken.png");
 }
 
+.ryu-cool {
+	background-image: url("../images/ryu-cool.gif");
+}
+
 .hadouken,
 .ryu-ready,
 .ryu-still, 
-.ryu-throwing {
+.ryu-throwing,
+.ryu-cool {
 	background-repeat: no-repeat;
 }
 
@@ -76,4 +83,57 @@ body {
 	z-index: 10;
 	display: none;
 }
+
+
+/*-----------------------*/
+/*  INSTRUCTION STYLES  */
+/*-----------------------*/
+
+
+.instructions {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 18px;
+	font-family: 'Bangers', cursive, "comic sans ms";
+	color: #000;
+}
+
+.instructions h1.street-fighter,
+.instructions h1.hedouken-instruction,
+.instructions h1.looking-cool-instruction {
+	position: absolute;
+	z-index: -1;
+}
+
+.instructions h1.street-fighter {
+	top:-180px;
+	left: 530px;
+	font-size: 128px;
+	width: 400px;
+	height: 300px;
+	padding: 200px 0;
+	color: #d81d1d;
+}
+
+.instructions h1.hedouken-instruction {
+	top: 20px;
+	left: 420px;
+	width: 400px;
+	font-size: 44px;
+	display: none;
+}
+
+.instructions h1.looking-cool-instruction {
+	top: 255px;
+	left: 530px;
+	width: 400px;
+	text-align: right;
+	font-size: 44px;
+	display: none;
+}
+
+
+
+
 
